@@ -133,7 +133,25 @@ You then need to enter the config files
 cd /config
 sudo nano config-hackrf.yml
 ```
-You will need to change all the parameters that apply to you. The adsb address is the one created by the ADSB installation.
+You will need to change the following parameters: 
+
+Parameter: Capture: 
+ 
+fc: Change to 1616000 
+
+
+Change the tar1090 address to the IP address of your own tar1090 interface 
+Change the location data from lines 70-80 
+
+Then run this command from within the config/config-hackrf.yml
+
+```
+sudo docker compse up -d
+```
+
+
+The radar processing output is available on http://localhost:49152. 
+The element screen is adsb2dd.30hours.dev
 
 
 
