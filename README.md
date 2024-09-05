@@ -23,7 +23,7 @@ Full hardware and software specifications / installation for a device that track
 
 ### For Passive Radar, ADSB and L-Band 
 
-1 x HackRF 
+1 x RSPDuo 
 1 x ADS-B 1090 Mhz Antenna 
 1 x L-Band Antenna 
 1 x L-Band LNA (Optional)
@@ -32,7 +32,7 @@ Full hardware and software specifications / installation for a device that track
 
 Please refer to the below diagram for how to set up your hardware  
 
-<a href="https://ibb.co/ZM0BLP5"><img src="https://i.ibb.co/QK4PbRL/Untitled-design-9.png" alt="Untitled-design-9" border="0"></a>
+<a href="https://ibb.co/YDk9HV2"><img src="https://i.ibb.co/1sqVF4Z/Untitled-design-11.png" alt="Untitled-design-11" border="0"></a>
 
 ## The Rf Theory 
 
@@ -131,7 +131,7 @@ You then need to enter the config files
 
 ```
 cd /config
-sudo nano config-hackrf.yml
+sudo nano config.yml
 ```
 You will need to change the following parameters: 
 
@@ -146,7 +146,7 @@ Change the location data from lines 70-80
 Then run this command from within the config/config-hackrf.yml
 
 ```
-sudo docker compse up -d
+sudo docker compose up -d
 ```
 
 
